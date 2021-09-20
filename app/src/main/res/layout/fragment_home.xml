@@ -54,9 +54,6 @@
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.4" />
 
-    <com.google.android.material.card.MaterialCardView
-        android:layout_width="60dp"
-        android:layout_height="wrap_content">
     <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/img_breakfast"
         android:layout_width="60dp"
