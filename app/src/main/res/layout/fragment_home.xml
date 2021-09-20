@@ -58,7 +58,6 @@
         android:id="@+id/img_breakfast"
         android:layout_width="60dp"
         android:layout_height="50dp"
-        android:clickable="true"
         android:scaleType="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/img_lunch"
@@ -74,7 +73,6 @@
         android:id="@+id/img_lunch"
         android:layout_width="60dp"
         android:layout_height="50dp"
-        android:clickable="true"
         android:scaleType="center"
         app:layout_constraintBottom_toBottomOf="@+id/img_breakfast"
         app:layout_constraintEnd_toStartOf="@+id/img_dinner"
@@ -88,7 +86,6 @@
         android:id="@+id/img_dinner"
         android:layout_width="60dp"
         android:layout_height="50dp"
-        android:clickable="true"
         android:scaleType="center"
         app:layout_constraintBottom_toBottomOf="@+id/img_lunch"
         app:layout_constraintEnd_toStartOf="@+id/shapeableImageView"
@@ -102,7 +99,6 @@
         android:id="@+id/shapeableImageView"
         android:layout_width="60dp"
         android:layout_height="50dp"
-        android:clickable="true"
         android:scaleType="center"
         app:layout_constraintBottom_toBottomOf="@+id/img_dinner"
         app:layout_constraintEnd_toEndOf="parent"
@@ -113,16 +109,32 @@
         app:strokeWidth="5dp" />
 
     <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/fab_photo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="16dp"
-        android:drawableRight="@drawable/ic_baseline_read_more_24"
+        android:drawableRight="@drawable/ic_baseline_add_a_photo_24"
         android:elevation="8dp"
-        android:text="History"
+        android:text="Take a Photo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.524"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline5"
+        app:layout_constraintVertical_bias="0.702" />
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/fab_gallery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:drawableRight="@drawable/ic_baseline_photo_library_24"
+        android:elevation="8dp"
+        android:text="Gallery"
         app:elevation="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fab_photo" />
 
     <TextView
         android:id="@+id/textView3"
