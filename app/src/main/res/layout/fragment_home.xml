@@ -1,178 +1,182 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/frameLayout"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".ui.views.HomeFragment">
+    xmlns:tools="http://schemas.android.com/tools">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.views.HomeFragment">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Food"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/imageView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Food"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/imageView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginTop="16dp"
-        android:src="@drawable/ic_restaurant_menu_24"
-        app:layout_constraintBottom_toTopOf="@+id/textView2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        tools:src="@drawable/ic_restaurant_menu_24" />
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/ic_restaurant_menu_24"
+            app:layout_constraintBottom_toTopOf="@+id/textView2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            tools:src="@drawable/ic_restaurant_menu_24" />
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Journal"
-        android:textAllCaps="false"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/guideline5"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Journal"
+            android:textAllCaps="false"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/guideline5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.4" />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.4" />
 
-    <com.google.android.material.imageview.ShapeableImageView
-        android:id="@+id/img_breakfast"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:padding="5dp"
-        android:scaleType="center"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/img_lunch"
-        app:layout_constraintHorizontal_chainStyle="spread"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/guideline5"
-        app:layout_constraintVertical_bias="0.26"
-        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize10Percent"
-        app:srcCompat="@drawable/ic_breakfast"
-        app:strokeWidth="5dp" />
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/img_breakfast"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:padding="5dp"
+            android:scaleType="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/img_lunch"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/guideline5"
+            app:layout_constraintVertical_bias="0.26"
+            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize10Percent"
+            app:srcCompat="@drawable/ic_breakfast"
+            app:strokeWidth="5dp" />
 
-    <com.google.android.material.imageview.ShapeableImageView
-        android:id="@+id/img_lunch"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:padding="5dp"
-        android:scaleType="center"
-        app:layout_constraintBottom_toBottomOf="@+id/img_breakfast"
-        app:layout_constraintEnd_toStartOf="@+id/img_dinner"
-        app:layout_constraintStart_toEndOf="@+id/img_breakfast"
-        app:layout_constraintTop_toTopOf="@+id/img_breakfast"
-        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize10Percent"
-        app:srcCompat="@drawable/ic_lunch"
-        app:strokeWidth="5dp" />
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/img_lunch"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:padding="5dp"
+            android:scaleType="center"
+            app:layout_constraintBottom_toBottomOf="@+id/img_breakfast"
+            app:layout_constraintEnd_toStartOf="@+id/img_dinner"
+            app:layout_constraintStart_toEndOf="@+id/img_breakfast"
+            app:layout_constraintTop_toTopOf="@+id/img_breakfast"
+            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize10Percent"
+            app:srcCompat="@drawable/ic_lunch"
+            app:strokeWidth="5dp" />
 
-    <com.google.android.material.imageview.ShapeableImageView
-        android:id="@+id/img_dinner"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:padding="5dp"
-        android:scaleType="center"
-        app:layout_constraintBottom_toBottomOf="@+id/img_lunch"
-        app:layout_constraintEnd_toStartOf="@+id/shapeableImageView"
-        app:layout_constraintStart_toEndOf="@+id/img_lunch"
-        app:layout_constraintTop_toTopOf="@+id/img_lunch"
-        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize10Percent"
-        app:srcCompat="@drawable/ic_dinner"
-        app:strokeWidth="5dp" />
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/img_dinner"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:padding="5dp"
+            android:scaleType="center"
+            app:layout_constraintBottom_toBottomOf="@+id/img_lunch"
+            app:layout_constraintEnd_toStartOf="@+id/shapeableImageView"
+            app:layout_constraintStart_toEndOf="@+id/img_lunch"
+            app:layout_constraintTop_toTopOf="@+id/img_lunch"
+            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize10Percent"
+            app:srcCompat="@drawable/ic_dinner"
+            app:strokeWidth="5dp" />
 
-    <com.google.android.material.imageview.ShapeableImageView
-        android:id="@+id/shapeableImageView"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:padding="5dp"
-        android:scaleType="center"
-        app:layout_constraintBottom_toBottomOf="@+id/img_dinner"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/img_dinner"
-        app:layout_constraintTop_toTopOf="@+id/img_dinner"
-        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize10Percent"
-        app:srcCompat="@drawable/ic_snack"
-        app:strokeWidth="5dp" />
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/shapeableImageView"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:padding="5dp"
+            android:scaleType="center"
+            app:layout_constraintBottom_toBottomOf="@+id/img_dinner"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/img_dinner"
+            app:layout_constraintTop_toTopOf="@+id/img_dinner"
+            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize10Percent"
+            app:srcCompat="@drawable/ic_snack"
+            app:strokeWidth="5dp" />
 
-    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
-        android:id="@+id/fab_photo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:drawableRight="@drawable/ic_baseline_add_a_photo_24"
-        android:elevation="8dp"
-        android:text="Take a Photo"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline5"
-        app:layout_constraintVertical_bias="0.702" />
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/fab_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/ic_baseline_add_a_photo_24"
+            android:elevation="8dp"
+            android:text="Take a Photo"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline5"
+            app:layout_constraintVertical_bias="0.702" />
 
-    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
-        android:id="@+id/fab_gallery"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:drawableRight="@drawable/ic_baseline_photo_library_24"
-        android:elevation="8dp"
-        android:text="Gallery"
-        app:elevation="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/fab_photo" />
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/fab_gallery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:drawableRight="@drawable/ic_baseline_photo_library_24"
+            android:elevation="8dp"
+            android:text="Gallery"
+            app:elevation="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fab_photo" />
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="breakfast"
-        app:layout_constraintEnd_toEndOf="@+id/img_breakfast"
-        app:layout_constraintStart_toStartOf="@+id/img_breakfast"
-        app:layout_constraintTop_toBottomOf="@+id/img_breakfast" />
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="breakfast"
+            app:layout_constraintEnd_toEndOf="@+id/img_breakfast"
+            app:layout_constraintStart_toStartOf="@+id/img_breakfast"
+            app:layout_constraintTop_toBottomOf="@+id/img_breakfast" />
 
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="lunch"
-        app:layout_constraintEnd_toEndOf="@+id/img_lunch"
-        app:layout_constraintStart_toStartOf="@+id/img_lunch"
-        app:layout_constraintTop_toBottomOf="@+id/img_lunch" />
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="lunch"
+            app:layout_constraintEnd_toEndOf="@+id/img_lunch"
+            app:layout_constraintStart_toStartOf="@+id/img_lunch"
+            app:layout_constraintTop_toBottomOf="@+id/img_lunch" />
 
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="dinner"
-        app:layout_constraintEnd_toEndOf="@+id/img_dinner"
-        app:layout_constraintStart_toStartOf="@+id/img_dinner"
-        app:layout_constraintTop_toBottomOf="@+id/img_dinner" />
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="dinner"
+            app:layout_constraintEnd_toEndOf="@+id/img_dinner"
+            app:layout_constraintStart_toStartOf="@+id/img_dinner"
+            app:layout_constraintTop_toBottomOf="@+id/img_dinner" />
 
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="snacks"
-        app:layout_constraintEnd_toEndOf="@+id/shapeableImageView"
-        app:layout_constraintStart_toStartOf="@+id/shapeableImageView"
-        app:layout_constraintTop_toBottomOf="@+id/shapeableImageView" />
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="snacks"
+            app:layout_constraintEnd_toEndOf="@+id/shapeableImageView"
+            app:layout_constraintStart_toStartOf="@+id/shapeableImageView"
+            app:layout_constraintTop_toBottomOf="@+id/shapeableImageView" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
