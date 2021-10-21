@@ -135,7 +135,7 @@
             android:layout_marginBottom="16dp"
             android:drawableRight="@drawable/ic_baseline_photo_library_24"
             android:elevation="8dp"
-            android:text="Gallery"
+            android:text="Food Gallery"
             app:elevation="8dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
